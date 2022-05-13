@@ -652,7 +652,6 @@
     padding-right: 30px;
   }
   .content__text {
-    margin-top: 100px;
     margin-left: 10%;
     display: grid;
     grid-template-columns: 45% 45%;
@@ -762,6 +761,9 @@
     grid-template-columns: 1fr;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .content__text {
+    padding-top: 56px;
   }
 }
 
