@@ -69,7 +69,7 @@ window.addEventListener("scroll", (e) => {
 //active menu footer
 const tagAFooterClone = [];
 const tagAMenuFooter = document.querySelectorAll(
-  "footer .wrapper .footer__menu ul li a"
+  "footer .bg__footer .wrapper .footer__menu ul li a"
 );
 tagAMenuFooter.forEach((tagAFooter) => {
   tagAFooterClone.push(tagAFooter);
