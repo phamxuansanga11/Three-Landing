@@ -22,7 +22,7 @@ header {
         margin-top: 0;
         z-index: 100;
         transition: 0.4s;
-        .logo .tagA i img {
+        .logo .tag-a i img {
           width: 70%;
         }
       }
@@ -70,11 +70,11 @@ header {
         }
       }
       .logo {
-        h1{
+        h1 {
           display: none;
         }
         display: flex;
-        .tagA {
+        .tag-a {
           display: flex;
           &::after {
             display: none;

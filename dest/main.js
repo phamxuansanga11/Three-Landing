@@ -3,7 +3,7 @@ const header = document.querySelector("header .bg__header .header");
 let heightHeader = header.offsetHeight;
 
 //get height background home
-let backGroundHome = document.querySelector("header .bg__header");
+const backGroundHome = document.querySelector("header .bg__header");
 let heightBackGroundHome = backGroundHome.offsetHeight;
 
 //scrollY active header
@@ -91,16 +91,16 @@ tagAMenuFooter.forEach((tagAFooter) => {
 });
 
 const flickityOptions = (wrapper, options) => {
-    return new Flickity(wrapper, options);
-  };
-  
-  const btnCtrlSlider = (button) => {
-      return document.querySelector(button)
-  }
+  return new Flickity(wrapper, options);
+};
+
+const btnCtrlSlider = (button) => {
+  return document.querySelector(button);
+};
 
 //slider
-var elem = document.querySelector(".main-carousel");
-var flkty = flickityOptions(elem, {
+var sliderProject = document.querySelector(".main-carousel");
+var flkty = flickityOptions(sliderProject, {
   // options
   cellAlign: "left",
   contain: true,
@@ -112,7 +112,9 @@ var flkty = flickityOptions(elem, {
 });
 
 const btnNext = btnCtrlSlider(".content__project .content__project-btn .btn");
-const btnPrev = btnCtrlSlider(".content__project .content__project-btn .btn-left");
+const btnPrev = btnCtrlSlider(
+  ".content__project .content__project-btn .btn-left"
+);
 
 btnNext.addEventListener("click", () => {
   flkty.next();
@@ -122,13 +124,12 @@ btnPrev.addEventListener("click", () => {
   flkty.previous();
 });
 
-
 //slider 2
 const btnNext2 = btnCtrlSlider(".meet__content .btn__slider .btn");
 const btnPrev2 = btnCtrlSlider(".meet__content .btn__slider .btn-left");
 
-var elem2 = document.querySelector(".main-carousel-2");
-var flkty2 = flickityOptions(elem2, {
+var meetContentSlider = document.querySelector(".main-carousel-2");
+var flktyMeetContent = flickityOptions(meetContentSlider, {
   cellAlign: "left",
   contain: true,
   draggable: true,
@@ -139,13 +140,13 @@ var flkty2 = flickityOptions(elem2, {
 });
 
 btnNext2.addEventListener("click", () => {
-  flkty2.next();
-  flkty3.next();
+  flktyMeetContent.next();
+  flktyMeetContentSliderMobile.next();
 });
 
 btnPrev2.addEventListener("click", () => {
-  flkty2.previous();
-  flkty3.previous();
+  flktyMeetContent.previous();
+  flktyMeetContentSliderMobile.previous();
 });
 
 //button back to top
@@ -167,8 +168,8 @@ btnBackToTop.addEventListener("click", () => {
 });
 
 //slider mobile
-var elem3 = document.querySelector(".main-carousel-3");
-var flkty3 = flickityOptions(elem3, {
+var meetContentSliderMobile = document.querySelector(".main-carousel-3");
+var flktyMeetContentSliderMobile = flickityOptions(meetContentSliderMobile, {
   // options
   cellAlign: "left",
   contain: true,
