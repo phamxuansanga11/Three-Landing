@@ -15,7 +15,7 @@
       border: 3px solid $green-cl;
       display: flex;
       cursor: pointer;
-      &:hover{
+      &:hover {
         background-color: #ccc;
       }
       i {
@@ -62,13 +62,11 @@
           line-height: 20px;
           color: #6d6081;
         }
-        .param-one {
+        .param-item {
           margin-bottom: 22px;
         }
-        .param-two {
-          margin-bottom: 50px;
-        }
         .btn-view__project {
+          margin-top: 35px;
           width: 200px;
           height: 50px;
           border: 3px solid $green-cl;
@@ -234,7 +232,7 @@
         padding-top: 100px;
         padding-bottom: 50px;
         height: 100%;
-        .param {
+        .param-item {
           margin-bottom: 50px;
           h4 {
             font-family: "mb";
@@ -404,7 +402,7 @@
       }
     }
   }
-  .meet__content-slider-mobile{
+  .meet__content-slider-mobile {
     display: none;
     .supperstart__detail {
       position: relative;
@@ -484,7 +482,7 @@
       border: 3px solid $green-cl;
       display: flex;
       cursor: pointer;
-      &:hover{
+      &:hover {
         background-color: #ccc;
       }
       i {
@@ -531,7 +529,7 @@
           line-height: 20px;
           color: #6d6081;
         }
-        .param-one {
+        .param {
           margin-bottom: 22px;
         }
         .param-map {
@@ -581,14 +579,16 @@
 }
 
 @media screen and(max-width: 1276px) {
-  .about__us .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text .param {
-    h4{
+  .about__us
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text
+    .param-item {
+    h4 {
       font-size: 1.2rem;
       margin-bottom: 0;
     }
-    p{
+    p {
       font-size: 1.2rem;
       line-height: 20px;
     }
@@ -596,22 +596,25 @@
 }
 
 @media screen and(max-width: 1191px) {
-  .content__project .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text {
+  .content__project
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text {
     padding-left: 70px;
     padding-right: 70px;
   }
-  .map .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text {
+  .map
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text {
     padding-left: 70px;
     padding-right: 70px;
   }
-  .map .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text 
-  .btn-view__project {
+  .map
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text
+    .btn-view__project {
     margin-bottom: 30px;
   }
 }
@@ -630,22 +633,25 @@
   .content__project .content__project-btn .btn {
     margin: 0 10px;
   }
-  .content__project .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text {
+  .content__project
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text {
     padding-left: 50px;
     padding-right: 50px;
   }
-  .content__project .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text 
-  .param-two {
+  .content__project
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text
+    .param-two {
     margin-bottom: 30px;
   }
-  .content__project .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text 
-  .btn-view__project {
+  .content__project
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text
+    .btn-view__project {
     margin-bottom: 30px;
   }
   .content__text .content__text-right p {
@@ -657,9 +663,10 @@
     grid-template-columns: 45% 45%;
     gap: 5%;
   }
-  .about__us .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text {
+  .about__us
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text {
     padding-left: 70px;
     padding-right: 70px;
   }
@@ -675,16 +682,13 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .meet__the-supperstart 
-  .content__text-right p {
+  .meet__the-supperstart .content__text-right p {
     padding-right: 0;
   }
-  .meet__the-supperstart 
-  .content__text-left {
+  .meet__the-supperstart .content__text-left {
     margin-bottom: 20px;
   }
-  .meet__the-supperstart 
-  .content__text-right p {
+  .meet__the-supperstart .content__text-right p {
     padding-right: 140px;
   }
   .meet__content {
@@ -716,7 +720,7 @@
     padding-right: 15px;
   }
   .content__text {
-    .content__text-left{
+    .content__text-left {
       margin-bottom: 20px;
     }
     grid-template-columns: 1fr;
@@ -725,39 +729,42 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .about__us .content__project-slider 
-  .content__project-slider-item {
+  .about__us .content__project-slider .content__project-slider-item {
     display: grid;
     grid-template-columns: 1fr;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .about__us .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text {
+  .about__us
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text {
     padding-top: 45px;
     padding-bottom: 0;
   }
-  .map .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text 
-  .param-map {
+  .map
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text
+    .param-map {
     margin-bottom: 35px;
   }
-  .map .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text h2 {
+  .map
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text
+    h2 {
     line-height: 35px;
     margin-bottom: 15px;
   }
-  .map .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text 
-  .param-map {
+  .map
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text
+    .param-map {
     margin-bottom: 20px;
   }
-  .map .content__project-slider 
-  .content__project-slider-item {
+  .map .content__project-slider .content__project-slider-item {
     grid-template-columns: 1fr;
     padding-left: 15px;
     padding-right: 15px;
@@ -772,31 +779,30 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .about__us .content__project-slider 
-  .content__project-slider-item 
-  .content__project-slider-text {
+  .about__us
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .meet__the-supperstart 
-  .content__text-right p {
+  .meet__the-supperstart .content__text-right p {
     padding-right: 30px;
   }
-  .meet__content .meet__content-slider 
-  .meet__content-slider-item {
+  .meet__content .meet__content-slider .meet__content-slider-item {
     grid-template-columns: 1fr;
   }
-  .meet__content .meet__content-slider 
-  .meet__content-slider-item 
-  .supperstart__detail img {
+  .meet__content
+    .meet__content-slider
+    .meet__content-slider-item
+    .supperstart__detail
+    img {
     width: 100%;
   }
-  header .bg__header .header 
-  .header__left {
+  header .bg__header .header .header__left {
     margin-right: 20px;
   }
-  header .bg__header .header 
-  .header__right {
+  header .bg__header .header .header__right {
     padding-left: 20px;
   }
   .content__project .content__project-btn {
@@ -805,8 +811,7 @@
   .content__text {
     margin-top: 0;
   }
-  .meet__the-supperstart 
-  .content__text-left h2 {
+  .meet__the-supperstart .content__text-left h2 {
     font-size: 3.5rem;
   }
   header .bg__header .header a {
@@ -822,7 +827,7 @@
   .meet__content .meet__content-slider {
     display: none;
   }
-  .meet__content .meet__content-slider-mobile{
+  .meet__content .meet__content-slider-mobile {
     display: block;
   }
   .map {
@@ -853,7 +858,7 @@
   footer .backtoptop i {
     font-size: 32px;
   }
-  footer{
+  footer {
     height: 430px;
   }
   footer .wrapper .footer__menu ul li {
@@ -862,17 +867,16 @@
   footer .wrapper .footer__menu ul li a {
     letter-spacing: 2px;
   }
-  header .bg__header .header{
+  header .bg__header .header {
     margin-top: 0;
   }
-  header .bg__header 
-  .header .logo .tagA i img {
+  header .bg__header .header .logo .tagA i img {
     width: 70%;
   }
   .content__project {
     padding-top: 30px;
   }
-  header .bg__header .header a{
+  header .bg__header .header a {
     font-size: 0.8rem;
   }
 }
