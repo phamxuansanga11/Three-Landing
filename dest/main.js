@@ -128,8 +128,8 @@ btnPrev.addEventListener("click", () => {
 const btnNext2 = btnCtrlSlider(".meet__content .btn__slider .btn");
 const btnPrev2 = btnCtrlSlider(".meet__content .btn__slider .btn-left");
 
-var meetContentSlider = document.querySelector(".main-carousel-2");
-var flktyMeetContent = flickityOptions(meetContentSlider, {
+var meetSliderContent = document.querySelector(".main-carousel-2");
+var flktyMeetContent = flickityOptions(meetSliderContent, {
   cellAlign: "left",
   contain: true,
   draggable: true,
