@@ -595,6 +595,16 @@
 }
 
 @media screen and(max-width: 1191px) {
+  .flickity-viewport {
+    height: 510px !important;
+  }
+  .content__project
+    .content__project-slider
+    .content__project-slider-item
+    .content__project-slider-text
+    .btn-view__project {
+    margin-bottom: 20px;
+  }
   .content__project
     .content__project-slider
     .content__project-slider-item
